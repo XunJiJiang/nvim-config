@@ -44,11 +44,14 @@ end
 require "lazy_setup"
 require "polish"
 
--- vim.cmd [[
---   augroup Alpha
---     autocmd!
---     autocmd VimEnter * ++nested lua require('alpha').start()
---   augroup END
--- ]]
+if vim.g.neovide then
+  -- Telescope 使用模糊窗口
+  -- 仅在 neovide 下生效, 在powershell 7使用会导致窗口背景色全透明
+  require("telescope").setup {
+    defaults = {
+      winblend = 100,
+    },
+  }
+end
 
 -- require("alpha").start()

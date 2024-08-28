@@ -32,7 +32,14 @@ local M = {}
 M.set_highlights = function()
   local hl = {}
 
-  -- 第一组 ///
+  -- 其他
+  hl["AlphaHeader"] = { fg = "#311b92", bg = "NONE" }
+  hl["AlphaButtons"] = { fg = "#3399ff", bg = "NONE" }
+  hl["AlphaShortcut"] = { fg = "#53C670", bg = "NONE" }
+  hl["AlphaFooter"] = { fg = "#311b92", bg = "NONE" }
+  -- 其他
+
+  -- 第一组
   hl["Comment"] = { fg = "#949494", bg = "NONE" }
   hl["Number"] = { fg = "#ffd700", bg = "NONE" }
   hl["String"] = { fg = "#87ff7c", bg = "NONE" }

@@ -31,10 +31,3 @@ require("lazy").setup({
     },
   },
 } --[[@as LazyConfig]])
-
--- Telescope 使用模糊窗口
-require("telescope").setup {
-  defaults = {
-    winblend = 100,
-  },
-}
